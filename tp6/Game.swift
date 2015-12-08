@@ -9,9 +9,6 @@
 import Foundation
 
 class Game {
-
-//    let factDict = Factdeck()
-//    var fact: Factoid?
     
     var currentValue: Bool = true
     var targetValue: Bool = false
@@ -23,11 +20,6 @@ class Game {
         round += 1
         targetValue = false
         currentValue = true
-//        resetFactInformation()
-//        question = fact.factStatement
-//        targetValue = fact.factReality
-//        //question = resetFactInformation().factStatement
-//        //targetValue = resetFactInformation().factReality
     }
     
     func startNewGame() {
@@ -37,7 +29,11 @@ class Game {
     }
     
     func calculateScore() {
-        score += 1
+        if currentValue == targetValue {
+            score += 100
+        } else {
+            score -= 10
+        }
     }
     
     func determineTitle() -> String {
@@ -47,15 +43,6 @@ class Game {
     func generateMessage() -> String {
         return "This is the message!"
     }
-    
-    
-//    func resetFactInformation() {
-//
-//        if let temp = factDict.drawRandomFact() {
-//            self.fact = temp
-//        }
-//    }
-    
     
     func casting(b: Bool) -> String {
         var statement: String

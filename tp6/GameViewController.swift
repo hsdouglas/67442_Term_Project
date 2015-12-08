@@ -35,11 +35,15 @@ class GameViewController: UIViewController {
     }
 
     @IBAction func toggleTF(tfSwitch: UISwitch) {
+        var guess: Bool
         if tfSwitch.on {
+            guess = true
             switchState.text = "You are guessing TRUE"
         } else {
+            guess = false
             switchState.text = "You are guessing FALSE"
         }
+        game.currentValue = guess
     }
     
     @IBAction func submitAnswer(sender: AnyObject) {
@@ -63,6 +67,8 @@ class GameViewController: UIViewController {
         alert.addAction(action)
         presentViewController(alert, animated: true, completion: nil)
     }
+    
+
     
     func updateLabels() {
         round.text = game.round.description
