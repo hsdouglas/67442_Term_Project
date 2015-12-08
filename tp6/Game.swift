@@ -12,6 +12,7 @@ class Game {
 
     var currentValue: Bool = true
     var targetValue: Bool = false
+    var question: String = "Initial question"
     var score: Int = 0
     var round: Int = 0
     
