@@ -68,6 +68,7 @@ class GameViewController: UIViewController {
     }
     
     func startNewRound() {
+        game.calculateScore()
         game.startNewRound()
     }
     
