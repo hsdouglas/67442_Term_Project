@@ -46,6 +46,7 @@ class GameViewController: UIViewController {
         //set values in game
         //check those values for win/loss
         generateAlert()
+        
     }
     
     func generateAlert() {
@@ -64,14 +65,13 @@ class GameViewController: UIViewController {
     }
     
     func updateLabels() {
-        questionLabel.text = game.question
-        answerLabel.text = game.casting(game.targetValue)
         round.text = game.round.description
         score.text = game.score.description
         
         if let flashcard = factDict.drawRandomFact() {
             self.fact = flashcard
             questionLabel.text = flashcard.factStatement
+            answerLabel.text = flashcard.factReality.description
         }
     }
     
@@ -79,13 +79,5 @@ class GameViewController: UIViewController {
         game.calculateScore()
         game.startNewRound()
     }
-    
-//    override func viewWillAppear(animated: Bool) {
-//        super.viewWillAppear(animated)
-//        if let flashcard = factDict.drawRandomFact() {
-//            self.fact = flashcard
-//            questionLabel.text = flashcard.factStatement
-//        }
-//    }
     
 }
