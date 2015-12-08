@@ -36,6 +36,24 @@ class GameViewController: UIViewController {
         }
     }
     
+    @IBAction func submitAnswer(sender: AnyObject) {
+        //set values in game
+        //check those values for win/loss
+        generateAlert()
+    }
+    
+    func generateAlert() {
+        var title = "Hello"
+        var message = "This is where the message would appear"
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
+        
+        let action = UIAlertAction(title: "ok", style: .Default, handler: nil)
+        
+        alert.addAction(action)
+        presentViewController(alert, animated: true, completion: nil)
+    }
+    
     func updateLabels() {
         questionLabel.text = game.question
         answerLabel.text = casting(game.targetValue.boolValue)
