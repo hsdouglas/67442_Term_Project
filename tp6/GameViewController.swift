@@ -20,6 +20,7 @@ class GameViewController: UIViewController {
     var game = Game()
     
     override func viewDidLoad() {
+        game.startNewGame()
         updateLabels()
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -50,7 +51,10 @@ class GameViewController: UIViewController {
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
         
-        let action = UIAlertAction(title: "ok", style: .Default, handler: nil)
+        let action = UIAlertAction(title: "ok", style: .Default, handler: { action in
+            self.startNewRound()
+            self.updateLabels()
+        })
         
         alert.addAction(action)
         presentViewController(alert, animated: true, completion: nil)
@@ -61,6 +65,10 @@ class GameViewController: UIViewController {
         answerLabel.text = game.casting(game.targetValue)
         round.text = game.round.description
         score.text = game.score.description
+    }
+    
+    func startNewRound() {
+        game.startNewRound()
     }
     
 }
