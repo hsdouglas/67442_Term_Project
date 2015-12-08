@@ -14,6 +14,8 @@ class GameViewController: UIViewController {
     @IBOutlet weak var switchState: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var answerLabel: UILabel!
+    @IBOutlet weak var round: UILabel!
+    @IBOutlet weak var score: UILabel!
     
     var game = Game()
     
@@ -57,6 +59,8 @@ class GameViewController: UIViewController {
     func updateLabels() {
         questionLabel.text = game.question
         answerLabel.text = game.casting(game.targetValue)
+        round.text = game.round.description
+        score.text = game.score.description
     }
     
 }
