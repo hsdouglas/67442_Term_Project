@@ -40,4 +40,16 @@ class Game {
         return "This is the message!"
     }
     
+    func casting(b: Bool) -> String {
+        var statement: String
+        
+        if (b == true) {
+            statement = "true"
+        } else {
+            statement = "false"
+        }
+        
+        return statement
+    }
+    
 }

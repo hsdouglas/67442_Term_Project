@@ -56,18 +56,7 @@ class GameViewController: UIViewController {
     
     func updateLabels() {
         questionLabel.text = game.question
-        answerLabel.text = casting(game.targetValue.boolValue)
+        answerLabel.text = game.casting(game.targetValue)
     }
     
-    func casting(b: Bool) -> String {
-        var statement: String
-        
-        if (b == true) {
-            statement = "true"
-        } else {
-            statement = "false"
-        }
-        
-        return statement
-    }
 }
