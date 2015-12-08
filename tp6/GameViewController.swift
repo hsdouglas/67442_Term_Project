@@ -43,8 +43,8 @@ class GameViewController: UIViewController {
     }
     
     func generateAlert() {
-        var title = "Hello"
-        var message = "This is where the message would appear"
+        var title = game.determineTitle()
+        var message = game.generateMessage()
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
         

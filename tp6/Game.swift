@@ -37,8 +37,7 @@ class Game {
     }
     
     func generateMessage() -> String {
-        let message = "The value of the slider is: \(currentValue) \nThe target value is: \(targetValue)"
-        return message
+        return "This is the message!"
     }
     
 }
