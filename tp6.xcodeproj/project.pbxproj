@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4285D1FA1C176028001876F2 /* Factoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4285D1F91C176028001876F2 /* Factoid.swift */; };
+		4285D1FC1C1760E1001876F2 /* Factdeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4285D1FB1C1760E1001876F2 /* Factdeck.swift */; };
 		4295E4921C173EEE009528FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4295E4911C173EEE009528FA /* AppDelegate.swift */; };
 		4295E4941C173EEE009528FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4295E4931C173EEE009528FA /* ViewController.swift */; };
 		4295E4971C173EEE009528FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4295E4951C173EEE009528FA /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4285D1F91C176028001876F2 /* Factoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factoid.swift; sourceTree = "<group>"; };
+		4285D1FB1C1760E1001876F2 /* Factdeck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factdeck.swift; sourceTree = "<group>"; };
 		4295E48C1C173EEE009528FA /* tp6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tp6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4295E4901C173EEE009528FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4295E4911C173EEE009528FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +89,8 @@
 				4295E4931C173EEE009528FA /* ViewController.swift */,
 				4295E4B31C174045009528FA /* GameViewController.swift */,
 				4295E4B51C174375009528FA /* Game.swift */,
+				4285D1F91C176028001876F2 /* Factoid.swift */,
+				4285D1FB1C1760E1001876F2 /* Factdeck.swift */,
 				4295E4951C173EEE009528FA /* Main.storyboard */,
 				4295E4981C173EEE009528FA /* Images.xcassets */,
 				4295E49A1C173EEE009528FA /* LaunchScreen.xib */,
@@ -219,9 +225,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4285D1FA1C176028001876F2 /* Factoid.swift in Sources */,
 				4295E4941C173EEE009528FA /* ViewController.swift in Sources */,
 				4295E4B41C174045009528FA /* GameViewController.swift in Sources */,
 				4295E4921C173EEE009528FA /* AppDelegate.swift in Sources */,
+				4285D1FC1C1760E1001876F2 /* Factdeck.swift in Sources */,
 				4295E4B61C174375009528FA /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +434,7 @@
 				4295E4AD1C173EEE009528FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4295E4AE1C173EEE009528FA /* Build configuration list for PBXNativeTarget "tp6Tests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +443,7 @@
 				4295E4B01C173EEE009528FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

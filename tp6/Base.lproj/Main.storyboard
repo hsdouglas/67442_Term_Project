@@ -115,13 +115,6 @@
                                     <action selector="submitAnswer:" destination="9O8-PD-BCM" eventType="touchUpInside" id="Lbi-z9-Agy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXI-UH-VVQ">
-                                <rect key="frame" x="208" y="507" width="114" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Start New Game">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Round:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5d-8E-Y4P">
                                 <rect key="frame" x="51" y="37" width="56" height="21"/>
                                 <animations/>

@@ -9,6 +9,9 @@
 import UIKit
 
 class GameViewController: UIViewController {
+    
+    let factDict = Factdeck()
+    var fact: Factoid?
 
     @IBOutlet weak var tfSwitch: UISwitch!
     @IBOutlet weak var switchState: UILabel!
@@ -65,11 +68,24 @@ class GameViewController: UIViewController {
         answerLabel.text = game.casting(game.targetValue)
         round.text = game.round.description
         score.text = game.score.description
+        
+        if let flashcard = factDict.drawRandomFact() {
+            self.fact = flashcard
+            questionLabel.text = flashcard.factStatement
+        }
     }
     
     func startNewRound() {
         game.calculateScore()
         game.startNewRound()
     }
+    
+//    override func viewWillAppear(animated: Bool) {
+//        super.viewWillAppear(animated)
+//        if let flashcard = factDict.drawRandomFact() {
+//            self.fact = flashcard
+//            questionLabel.text = flashcard.factStatement
+//        }
+//    }
     
 }
