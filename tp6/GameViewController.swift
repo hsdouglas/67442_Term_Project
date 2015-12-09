@@ -74,16 +74,22 @@ class GameViewController: UIViewController {
         round.text = game.round.description
         score.text = game.score.description
         
-        if let flashcard = factDict.drawRandomFact() {
-            self.fact = flashcard
-            questionLabel.text = flashcard.factStatement
-            answerLabel.text = flashcard.factReality.description
-        }
+        drawNewFact()
     }
     
     func startNewRound() {
         game.calculateScore()
+        drawNewFact()
         game.startNewRound()
+    }
+    
+    func drawNewFact() {
+        if let flashcard = factDict.drawRandomFact() {
+            self.fact = flashcard
+            questionLabel.text = flashcard.factStatement
+            answerLabel.text = flashcard.factReality.description
+            game.targetValue = flashcard.factReality
+        }
     }
     
 }

@@ -11,14 +11,13 @@ import Foundation
 class Game {
     
     var currentValue: Bool = true
-    var targetValue: Bool = false
+    var targetValue: Bool = true
     var question: String = "Initial question"
     var score: Int = 0
     var round: Int = 0
     
     func startNewRound() {
         round += 1
-        targetValue = false
         currentValue = true
     }
     
@@ -30,18 +29,30 @@ class Game {
     
     func calculateScore() {
         if currentValue == targetValue {
-            score += 100
+            score += 15
         } else {
             score -= 10
         }
     }
     
     func determineTitle() -> String {
-        return "amazing!"
+        var title: String
+        if currentValue == targetValue {
+            title = "That is correct!"
+        } else {
+            title = "That is incorrect."
+        }
+        return title
     }
     
     func generateMessage() -> String {
-        return "This is the message!"
+        var message: String
+        if currentValue == targetValue {
+            message = "Knowing about your health is extremely important."
+        } else {
+            message = "Time to study up! Use the info link in the homepage."
+        }
+        return message
     }
     
     func casting(b: Bool) -> String {
