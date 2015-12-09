@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../tp6/LearnMoreViewController.swift">
+   </FileRef>
+   <FileRef
       location = "self:tp6.xcodeproj">
    </FileRef>
 </Workspace>
