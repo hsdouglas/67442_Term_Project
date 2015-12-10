@@ -17,7 +17,7 @@
                BlueprintIdentifier = "4295E48B1C173EEE009528FA"
                BuildableName = "tp6.app"
                BlueprintName = "tp6"
-               ReferencedContainer = "container:tp6.xcodeproj">
+               ReferencedContainer = "container:adolessons.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,7 +31,7 @@
                BlueprintIdentifier = "4295E4A01C173EEE009528FA"
                BuildableName = "tp6Tests.xctest"
                BlueprintName = "tp6Tests"
-               ReferencedContainer = "container:tp6.xcodeproj">
+               ReferencedContainer = "container:adolessons.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -49,7 +49,7 @@
                BlueprintIdentifier = "4295E4A01C173EEE009528FA"
                BuildableName = "tp6Tests.xctest"
                BlueprintName = "tp6Tests"
-               ReferencedContainer = "container:tp6.xcodeproj">
+               ReferencedContainer = "container:adolessons.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -59,7 +59,7 @@
             BlueprintIdentifier = "4295E48B1C173EEE009528FA"
             BuildableName = "tp6.app"
             BlueprintName = "tp6"
-            ReferencedContainer = "container:tp6.xcodeproj">
+            ReferencedContainer = "container:adolessons.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -79,7 +79,7 @@
             BlueprintIdentifier = "4295E48B1C173EEE009528FA"
             BuildableName = "tp6.app"
             BlueprintName = "tp6"
-            ReferencedContainer = "container:tp6.xcodeproj">
+            ReferencedContainer = "container:adolessons.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -98,7 +98,7 @@
             BlueprintIdentifier = "4295E48B1C173EEE009528FA"
             BuildableName = "tp6.app"
             BlueprintName = "tp6"
-            ReferencedContainer = "container:tp6.xcodeproj">
+            ReferencedContainer = "container:adolessons.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -71,8 +71,8 @@ class GameViewController: UIViewController {
 
     
     func updateLabels() {
-        round.text = game.round.description
-        score.text = game.score.description
+        round.text = "round \(game.round.description)"
+        score.text = "\(game.score.description) points"
         
         drawNewFact()
     }
