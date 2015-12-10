@@ -10,15 +10,15 @@ import Foundation
 
 class Game {
     
-    var currentValue: Bool = true
-    var targetValue: Bool = true
+    var currentValue: Bool = false
+    var targetValue: Bool = false
     var question: String = "Initial question"
     var score: Int = 0
     var round: Int = 0
+    var numCorrect: Int = 0
     
     func startNewRound() {
         round += 1
-        currentValue = true
     }
     
     func startNewGame() {
@@ -30,6 +30,7 @@ class Game {
     func calculateScore() {
         if currentValue == targetValue {
             score += 15
+            numCorrect += 1
         } else {
             score -= 10
         }
@@ -38,35 +39,36 @@ class Game {
     func determineTitle() -> String {
         var title: String
         if currentValue == targetValue {
-            title = "That is correct!"
+            title = "Correct"
         } else {
-            title = "That is incorrect."
+            title = "Incorrect"
+        }
+        if round == 5 {
+            title += " ...all done!"
         }
         return title
     }
     
     func generateMessage() -> String {
         var message: String
-        if round == 10 {
-            message = "You have finished the quiz!"
+        if round == 5 {
+            message = "You have finished the quiz."
+            
+            /* Some additional last advice */
+            if ((round - numCorrect) == 0) {
+                message += " Wowza, perfect score! 100%"
+            } else if ((round - numCorrect) <= 2) {
+                message += " Almost there. Keep studying!"
+            } else {
+                message += " Consider taking another look at the study materials. It's important to know about your body!"
+            }
         } else if currentValue == targetValue {
-            message = "Knowing about your health is extremely important."
+            message = "You're awesome!"
         } else {
-            message = "Time to study up! Use the info link in the homepage."
+            message = "Perhaps some studying is in order..."
         }
+
         return message
-    }
-    
-    func casting(b: Bool) -> String {
-        var statement: String
-        
-        if (b == true) {
-            statement = "true"
-        } else {
-            statement = "false"
-        }
-        
-        return statement
     }
     
 }

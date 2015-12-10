@@ -43,10 +43,10 @@ class GameViewController: UIViewController {
     @IBAction func toggleTF(tfSwitch: UISwitch) {
         var guess: Bool
         if tfSwitch.on {
-            guess = true
+            guess = false
             switchState.text = "You are guessing false."
         } else {
-            guess = false
+            guess = true
             switchState.text = "You are guessing true."
         }
         game.currentValue = guess
@@ -55,7 +55,8 @@ class GameViewController: UIViewController {
     @IBAction func submitAnswer(sender: AnyObject) {
         //set values in game
         //check those values for win/loss
-        if game.round == 10 {
+        if game.round == 5 {
+            score.text = "\(game.numCorrect.description) / \(game.round.description) correct"
             generateDoneAlert()
         } else {
             generateQuizAlert()
@@ -95,8 +96,8 @@ class GameViewController: UIViewController {
 
     
     func updateLabels() {
-        round.text = "round \(game.round.description)"
-        score.text = "\(game.score.description) points"
+        round.text = "Question \(game.round.description)"
+        score.text = "\(game.numCorrect.description) / \(game.round.description) correct"
         
         drawNewFact()
     }
