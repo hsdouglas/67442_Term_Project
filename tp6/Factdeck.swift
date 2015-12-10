@@ -24,7 +24,7 @@ class Factdeck {
             "mood swings can lead to stress" : true,
             "both girls and boys have more intense emotions during puberty" : true,
             "growing pains from growth spurts are real" : true,
-            "talking about emotions doesn't help" : false,
+            "talking about emotions doesn't help calm them" : false,
             "boys' voices deepen during puberty" : true,
             "boys and girls sweat less during puberty" : false,
             "only boys grow pubic hair" : false,
@@ -40,17 +40,16 @@ class Factdeck {
             
         ]
         
-        // Now create a simple way to loop through the dictionary and create a Flashcard object
-        // for each and add that object to the `cards` array we created as an instance variable.
-        // This can be done in one line using a closure and I'd encourage you to do so.
+        /* allow for looping through each fact */
         facts = map(factData) { Factoid(fact: $0, reality: $1) }
     }
     
+    /* allow for random generation of fact use in game view controller */
     func drawRandomFact() -> Factoid? {
-        if facts.isEmpty {  // shouldn't ever really be an issue; just being safe...
+        if facts.isEmpty {
             return nil
         } else {
-            // return a flashcard object from the deck cards
+            /* return a factoid object from the factdeck facts */
             return facts[Int(arc4random_uniform(UInt32(facts.count)))]
         }
     }

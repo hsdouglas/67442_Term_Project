@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		420C4E371C18881D00BDBB9D /* LearnMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420C4E361C18881D00BDBB9D /* LearnMoreViewController.swift */; };
+		423546071C19F32300F33CD7 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423546061C19F32300F33CD7 /* Timer.swift */; };
 		4285D1FA1C176028001876F2 /* Factoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4285D1F91C176028001876F2 /* Factoid.swift */; };
 		4285D1FC1C1760E1001876F2 /* Factdeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4285D1FB1C1760E1001876F2 /* Factdeck.swift */; };
 		4295E4921C173EEE009528FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4295E4911C173EEE009528FA /* AppDelegate.swift */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		420C4E361C18881D00BDBB9D /* LearnMoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnMoreViewController.swift; sourceTree = "<group>"; };
+		423546061C19F32300F33CD7 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		4285D1F91C176028001876F2 /* Factoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factoid.swift; sourceTree = "<group>"; };
 		4285D1FB1C1760E1001876F2 /* Factdeck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factdeck.swift; sourceTree = "<group>"; };
 		4295E48C1C173EEE009528FA /* tp6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tp6.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +93,7 @@
 				4295E4931C173EEE009528FA /* ViewController.swift */,
 				4295E4B31C174045009528FA /* GameViewController.swift */,
 				4295E4B51C174375009528FA /* Game.swift */,
+				423546061C19F32300F33CD7 /* Timer.swift */,
 				4285D1F91C176028001876F2 /* Factoid.swift */,
 				4285D1FB1C1760E1001876F2 /* Factdeck.swift */,
 				420C4E361C18881D00BDBB9D /* LearnMoreViewController.swift */,
@@ -235,6 +238,7 @@
 				4295E4921C173EEE009528FA /* AppDelegate.swift in Sources */,
 				4285D1FC1C1760E1001876F2 /* Factdeck.swift in Sources */,
 				4295E4B61C174375009528FA /* Game.swift in Sources */,
+				423546071C19F32300F33CD7 /* Timer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
