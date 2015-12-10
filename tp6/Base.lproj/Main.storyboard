@@ -223,27 +223,9 @@
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
+                                <variation key="heightClass=regular" misplaced="YES">
                                     <fontDescription key="fontDescription" name="AvenirNext-MediumItalic" family="Avenir Next" pointSize="17"/>
                                     <rect key="frame" x="142" y="35" width="98" height="46"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZw-8Y-WLj">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <animations/>
-                                <attributedString key="attributedText">
-                                    <fragment content="FALSE">
-                                        <attributes>
-                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <font key="NSFont" size="24" name="AvenirNext-BoldItalic"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
-                                    <fontDescription key="fontDescription" name="AvenirNext-MediumItalic" family="Avenir Next" pointSize="17"/>
-                                    <rect key="frame" x="334" y="63" width="98" height="46"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTM-5d-Hh5">
@@ -362,10 +344,29 @@
                                     <rect key="frame" x="346" y="263" width="74" height="26"/>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZw-8Y-WLj">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <attributedString key="attributedText">
+                                    <fragment content="FALSE">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="24" name="AvenirNext-BoldItalic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <fontDescription key="fontDescription" name="AvenirNext-MediumItalic" family="Avenir Next" pointSize="17"/>
+                                    <rect key="frame" x="334" y="63" width="98" height="46"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.58823529409999997" green="0.82352941180000006" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="QZw-8Y-WLj" firstAttribute="top" secondItem="sTM-5d-Hh5" secondAttribute="bottom" constant="-59" id="1oE-ME-zRo"/>
                             <constraint firstItem="ypv-at-ox4" firstAttribute="centerY" secondItem="Jsd-a6-5NF" secondAttribute="centerY" constant="0.5" id="28R-MB-G8w"/>
                             <constraint firstAttribute="centerX" secondItem="YVq-H7-Zfd" secondAttribute="centerX" id="4I1-D0-n6z"/>
                             <constraint firstItem="WIa-DU-Ntm" firstAttribute="leading" secondItem="27I-zE-AhW" secondAttribute="leading" id="68m-w8-BWx"/>
@@ -377,6 +378,7 @@
                             <constraint firstItem="WIa-DU-Ntm" firstAttribute="top" secondItem="YVq-H7-Zfd" secondAttribute="top" constant="138" id="AIr-Kv-d3l"/>
                             <constraint firstAttribute="centerX" secondItem="sTM-5d-Hh5" secondAttribute="centerX" id="AJL-2E-X0R"/>
                             <constraint firstAttribute="centerX" secondItem="Jsd-a6-5NF" secondAttribute="centerX" id="BfB-Ix-F8Z"/>
+                            <constraint firstItem="QZw-8Y-WLj" firstAttribute="top" secondItem="N1G-8r-g3N" secondAttribute="bottom" constant="-18" id="JjH-Nb-DLD"/>
                             <constraint firstAttribute="centerX" secondItem="27I-zE-AhW" secondAttribute="centerX" id="LBj-a9-yXU"/>
                             <constraint firstItem="WIa-DU-Ntm" firstAttribute="width" secondItem="27I-zE-AhW" secondAttribute="width" id="Lmd-GK-ZzT"/>
                             <constraint firstAttribute="centerX" secondItem="YVq-H7-Zfd" secondAttribute="centerX" id="MMf-IN-1aT"/>
@@ -389,25 +391,25 @@
                             <constraint firstAttribute="centerX" secondItem="YVq-H7-Zfd" secondAttribute="centerX" id="WVp-Qc-wkc"/>
                             <constraint firstItem="ypv-at-ox4" firstAttribute="top" secondItem="DMq-C1-FoX" secondAttribute="top" id="ZBm-uQ-eZD"/>
                             <constraint firstAttribute="centerX" secondItem="Jsd-a6-5NF" secondAttribute="centerX" id="apG-1O-5Y9"/>
+                            <constraint firstItem="QZw-8Y-WLj" firstAttribute="leading" secondItem="N1G-8r-g3N" secondAttribute="trailing" constant="94" id="auH-AX-hvs"/>
                             <constraint firstAttribute="centerX" secondItem="cmz-hV-Xqj" secondAttribute="centerX" id="cMw-nL-7fd"/>
                             <constraint firstItem="Jsd-a6-5NF" firstAttribute="top" secondItem="cmz-hV-Xqj" secondAttribute="bottom" constant="46.5" id="cxB-yN-yhX"/>
                             <constraint firstItem="ypv-at-ox4" firstAttribute="leading" secondItem="Jsd-a6-5NF" secondAttribute="trailing" constant="36" id="e9M-FR-Whu"/>
                             <constraint firstItem="sTM-5d-Hh5" firstAttribute="leading" secondItem="N1G-8r-g3N" secondAttribute="trailing" constant="-11" id="gd2-ER-1Bu"/>
                             <constraint firstItem="WIa-DU-Ntm" firstAttribute="top" secondItem="YVq-H7-Zfd" secondAttribute="bottom" constant="15" id="kHN-TP-VHt"/>
-                            <constraint firstItem="QZw-8Y-WLj" firstAttribute="bottom" secondItem="sTM-5d-Hh5" secondAttribute="bottom" constant="-13" id="lKZ-MA-ma8"/>
-                            <constraint firstItem="QZw-8Y-WLj" firstAttribute="top" secondItem="N1G-8r-g3N" secondAttribute="bottom" constant="-18" id="mOT-bh-vvk"/>
                             <constraint firstItem="QZw-8Y-WLj" firstAttribute="leading" secondItem="sTM-5d-Hh5" secondAttribute="trailing" constant="-7" id="sBu-4C-Qe9"/>
                             <constraint firstItem="ypv-at-ox4" firstAttribute="bottom" secondItem="DMq-C1-FoX" secondAttribute="bottom" id="uMf-MV-pBq"/>
+                            <constraint firstItem="QZw-8Y-WLj" firstAttribute="bottom" secondItem="sTM-5d-Hh5" secondAttribute="bottom" constant="-13" id="ufG-Na-g1L"/>
                             <constraint firstItem="WIa-DU-Ntm" firstAttribute="height" secondItem="27I-zE-AhW" secondAttribute="height" id="vbN-XO-5Tc"/>
                             <constraint firstItem="ypv-at-ox4" firstAttribute="leading" secondItem="DMq-C1-FoX" secondAttribute="trailing" constant="118" id="xC8-H8-HAA"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="N1G-8r-g3N"/>
-                                <exclude reference="QZw-8Y-WLj"/>
                                 <exclude reference="sTM-5d-Hh5"/>
                                 <exclude reference="DMq-C1-FoX"/>
                                 <exclude reference="ypv-at-ox4"/>
+                                <exclude reference="QZw-8Y-WLj"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="8Rl-BV-iKa"/>
@@ -416,10 +418,12 @@
                                 <exclude reference="AJL-2E-X0R"/>
                                 <exclude reference="RcJ-uc-ivt"/>
                                 <exclude reference="gd2-ER-1Bu"/>
+                                <exclude reference="1oE-ME-zRo"/>
+                                <exclude reference="JjH-Nb-DLD"/>
                                 <exclude reference="Vqm-Qi-cSk"/>
-                                <exclude reference="lKZ-MA-ma8"/>
-                                <exclude reference="mOT-bh-vvk"/>
+                                <exclude reference="auH-AX-hvs"/>
                                 <exclude reference="sBu-4C-Qe9"/>
+                                <exclude reference="ufG-Na-g1L"/>
                                 <exclude reference="6WC-bK-Lyd"/>
                                 <exclude reference="BfB-Ix-F8Z"/>
                                 <exclude reference="NNu-YK-D1S"/>
@@ -449,10 +453,10 @@
                         <variation key="heightClass=regular">
                             <mask key="subviews">
                                 <include reference="N1G-8r-g3N"/>
-                                <include reference="QZw-8Y-WLj"/>
                                 <include reference="sTM-5d-Hh5"/>
                                 <include reference="DMq-C1-FoX"/>
                                 <include reference="ypv-at-ox4"/>
+                                <include reference="QZw-8Y-WLj"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="8Rl-BV-iKa"/>
@@ -461,10 +465,12 @@
                                 <include reference="AJL-2E-X0R"/>
                                 <include reference="RcJ-uc-ivt"/>
                                 <include reference="gd2-ER-1Bu"/>
+                                <include reference="1oE-ME-zRo"/>
+                                <include reference="JjH-Nb-DLD"/>
                                 <include reference="Vqm-Qi-cSk"/>
-                                <include reference="lKZ-MA-ma8"/>
-                                <include reference="mOT-bh-vvk"/>
+                                <include reference="auH-AX-hvs"/>
                                 <include reference="sBu-4C-Qe9"/>
+                                <include reference="ufG-Na-g1L"/>
                                 <include reference="6WC-bK-Lyd"/>
                                 <include reference="BfB-Ix-F8Z"/>
                                 <include reference="NNu-YK-D1S"/>
