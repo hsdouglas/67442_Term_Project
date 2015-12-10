@@ -33,15 +33,21 @@ class GameViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "returnHome" {
+            let showSplashScreen:ViewController = segue.destinationViewController as! ViewController
+        }
+    }
 
     @IBAction func toggleTF(tfSwitch: UISwitch) {
         var guess: Bool
         if tfSwitch.on {
             guess = true
-            switchState.text = "You are guessing TRUE"
+            switchState.text = "You are guessing false."
         } else {
             guess = false
-            switchState.text = "You are guessing FALSE"
+            switchState.text = "You are guessing true."
         }
         game.currentValue = guess
     }
@@ -49,11 +55,29 @@ class GameViewController: UIViewController {
     @IBAction func submitAnswer(sender: AnyObject) {
         //set values in game
         //check those values for win/loss
-        generateAlert()
+        if game.round == 10 {
+            generateDoneAlert()
+        } else {
+            generateQuizAlert()
+        }
         
     }
     
-    func generateAlert() {
+    func generateDoneAlert() {
+        var title = game.determineTitle()
+        var message = game.generateMessage()
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
+        
+        let action = UIAlertAction(title: "all done!", style: .Default, handler: {
+                action in self.performSegueWithIdentifier("returnHome", sender: self)
+            })
+        
+        alert.addAction(action)
+        presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    func generateQuizAlert() {
         var title = game.determineTitle()
         var message = game.generateMessage()
         

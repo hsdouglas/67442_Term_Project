@@ -47,7 +47,9 @@ class Game {
     
     func generateMessage() -> String {
         var message: String
-        if currentValue == targetValue {
+        if round == 10 {
+            message = "You have finished the quiz!"
+        } else if currentValue == targetValue {
             message = "Knowing about your health is extremely important."
         } else {
             message = "Time to study up! Use the info link in the homepage."

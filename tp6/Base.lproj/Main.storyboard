@@ -525,6 +525,7 @@
                         <outlet property="score" destination="27I-zE-AhW" id="rwn-Go-plx"/>
                         <outlet property="switchState" destination="MRD-A6-Qcy" id="vq6-K0-ahr"/>
                         <outlet property="tfSwitch" destination="Jsd-a6-5NF" id="OnP-7I-fuF"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="returnHome" id="Ppo-40-fM4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xyt-jd-AMg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -556,4 +557,7 @@
         <image name="splash" width="1536" height="2048"/>
         <image name="trueswitch" width="77" height="27"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ppo-40-fM4"/>
+    </inferredMetricsTieBreakers>
 </document>
