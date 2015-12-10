@@ -10,6 +10,7 @@ import Foundation
 
 struct Factoid {
     
+    /* simply need to know what the fact is, and if it's true or false */
     var factStatement: String
     var factReality: Bool
     

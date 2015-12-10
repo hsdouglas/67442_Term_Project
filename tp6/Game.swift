@@ -10,32 +10,33 @@ import Foundation
 
 class Game {
     
+    /* values to keep track of and compare against the user's input */
     var currentValue: Bool = false
     var targetValue: Bool = false
     var question: String = "Initial question"
-    var score: Int = 0
     var round: Int = 0
     var numCorrect: Int = 0
     
+    /* only need to set the round score, because the targetValue is set by the GameViewController */
     func startNewRound() {
         round += 1
     }
     
+    /* give the user a blank slate so that they are encouraged to improve performance */
     func startNewGame() {
-        score = 0
+        numCorrect = 0
         round = 0
         startNewRound()
     }
     
-    func calculateScore() {
+    /* user testing showed that number correct was more valuable than arbitrary points assignment for correct/incorrect answers */
+    func calculateNumCorrect() {
         if currentValue == targetValue {
-            score += 15
             numCorrect += 1
-        } else {
-            score -= 10
         }
     }
     
+    /* prepare the title for the alert, based on the user's accuracy */
     func determineTitle() -> String {
         var title: String
         if currentValue == targetValue {
@@ -49,12 +50,13 @@ class Game {
         return title
     }
     
+    /* prepare the message for the alert, based on the user's accuracy */
     func generateMessage() -> String {
         var message: String
         if round == 5 {
             message = "You have finished the quiz."
             
-            /* Some additional last advice */
+            /* Some additional last advice if the game is over */
             if ((round - numCorrect) == 0) {
                 message += " Wowza, perfect score! 100%"
             } else if ((round - numCorrect) <= 2) {
@@ -63,7 +65,7 @@ class Game {
                 message += " Consider taking another look at the study materials. It's important to know about your body!"
             }
         } else if currentValue == targetValue {
-            message = "You're awesome!"
+            message = "It's great that you know so much!"
         } else {
             message = "Perhaps some studying is in order..."
         }

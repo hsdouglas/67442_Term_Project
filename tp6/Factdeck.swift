@@ -12,6 +12,7 @@ class Factdeck {
     
     var facts = [Factoid]()
     
+    /* these facts are sourced by PlannedParenthood's puberty info page (shown in the UIWebView) */
     init() {
         let factData = [
             "puberty happens to everybody" : true,

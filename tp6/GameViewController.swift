@@ -104,7 +104,7 @@ class GameViewController: UIViewController {
     
     /* send the game object data to calculate user feedback */
     func startNewRound() {
-        game.calculateScore()
+        game.calculateNumCorrect()
         game.startNewRound()
     }
     

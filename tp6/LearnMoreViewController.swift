@@ -19,19 +19,16 @@ class LearnMoreViewController: UIViewController, WKNavigationDelegate {
         view = webView
     }
     
+    /* the webview shows the PlannedParenthood page to allow for microtasking on behalf of the user */
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let url = NSURL(string: "https://www.plannedparenthood.org/teens/my-body")
         webView.loadRequest(NSURLRequest(URL: url!))
-
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 }
