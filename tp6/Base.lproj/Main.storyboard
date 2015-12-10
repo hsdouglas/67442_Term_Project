@@ -223,7 +223,7 @@
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular" misplaced="YES">
+                                <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
                                     <fontDescription key="fontDescription" name="AvenirNext-MediumItalic" family="Avenir Next" pointSize="17"/>
                                     <rect key="frame" x="142" y="35" width="98" height="46"/>
                                 </variation>
@@ -241,7 +241,7 @@
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular" misplaced="YES">
+                                <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
                                     <fontDescription key="fontDescription" name="AvenirNext-MediumItalic" family="Avenir Next" pointSize="17"/>
                                     <rect key="frame" x="334" y="63" width="98" height="46"/>
                                 </variation>
@@ -302,6 +302,7 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" onImage="falseswitch" offImage="trueswitch" translatesAutoresizingMaskIntoConstraints="NO" id="Jsd-a6-5NF">
                                 <rect key="frame" x="261" y="342" width="51" height="31"/>
                                 <animations/>
+                                <color key="onTintColor" red="0.92156862750000001" green="0.25882352939999997" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="heightClass=regular" misplaced="YES">
                                     <rect key="frame" x="261" y="260" width="51" height="31"/>
                                 </variation>
@@ -394,6 +395,7 @@
                             <constraint firstItem="sTM-5d-Hh5" firstAttribute="leading" secondItem="N1G-8r-g3N" secondAttribute="trailing" constant="-11" id="gd2-ER-1Bu"/>
                             <constraint firstItem="WIa-DU-Ntm" firstAttribute="top" secondItem="YVq-H7-Zfd" secondAttribute="bottom" constant="15" id="kHN-TP-VHt"/>
                             <constraint firstItem="QZw-8Y-WLj" firstAttribute="bottom" secondItem="sTM-5d-Hh5" secondAttribute="bottom" constant="-13" id="lKZ-MA-ma8"/>
+                            <constraint firstItem="QZw-8Y-WLj" firstAttribute="top" secondItem="N1G-8r-g3N" secondAttribute="bottom" constant="-18" id="mOT-bh-vvk"/>
                             <constraint firstItem="QZw-8Y-WLj" firstAttribute="leading" secondItem="sTM-5d-Hh5" secondAttribute="trailing" constant="-7" id="sBu-4C-Qe9"/>
                             <constraint firstItem="ypv-at-ox4" firstAttribute="bottom" secondItem="DMq-C1-FoX" secondAttribute="bottom" id="uMf-MV-pBq"/>
                             <constraint firstItem="WIa-DU-Ntm" firstAttribute="height" secondItem="27I-zE-AhW" secondAttribute="height" id="vbN-XO-5Tc"/>
@@ -416,6 +418,7 @@
                                 <exclude reference="gd2-ER-1Bu"/>
                                 <exclude reference="Vqm-Qi-cSk"/>
                                 <exclude reference="lKZ-MA-ma8"/>
+                                <exclude reference="mOT-bh-vvk"/>
                                 <exclude reference="sBu-4C-Qe9"/>
                                 <exclude reference="6WC-bK-Lyd"/>
                                 <exclude reference="BfB-Ix-F8Z"/>
@@ -460,6 +463,7 @@
                                 <include reference="gd2-ER-1Bu"/>
                                 <include reference="Vqm-Qi-cSk"/>
                                 <include reference="lKZ-MA-ma8"/>
+                                <include reference="mOT-bh-vvk"/>
                                 <include reference="sBu-4C-Qe9"/>
                                 <include reference="6WC-bK-Lyd"/>
                                 <include reference="BfB-Ix-F8Z"/>
