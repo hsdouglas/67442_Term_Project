@@ -24,21 +24,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="800" height="1136"/>
                                 </variation>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7f-ft-WrC">
-                                <rect key="frame" x="487" y="479" width="22" height="22"/>
-                                <animations/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="493" y="679" width="22" height="22"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="c6f-qA-kPw" kind="modal" id="zqa-2J-idg"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V1J-8m-geJ">
                                 <rect key="frame" x="261" y="231" width="79" height="30"/>
                                 <animations/>
@@ -59,14 +44,30 @@
                                     <segue destination="9O8-PD-BCM" kind="modal" id="MAk-KO-5xp"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7f-ft-WrC">
+                                <rect key="frame" x="487" y="479" width="22" height="22"/>
+                                <animations/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="178" y="454" width="22" height="22"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="c6f-qA-kPw" kind="modal" id="zqa-2J-idg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="V1J-8m-geJ" secondAttribute="centerX" id="1R0-Nr-J3r"/>
+                            <constraint firstItem="Z7f-ft-WrC" firstAttribute="top" secondItem="V1J-8m-geJ" secondAttribute="bottom" constant="44" id="5Cn-aG-Nyo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Z7f-ft-WrC" secondAttribute="trailing" constant="75" id="5En-cW-dHO"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Z7f-ft-WrC" secondAttribute="bottom" constant="99" id="L0b-MG-Fab"/>
                             <constraint firstAttribute="centerY" secondItem="V1J-8m-geJ" secondAttribute="centerY" id="hKi-LH-hIG"/>
+                            <constraint firstItem="Z7f-ft-WrC" firstAttribute="centerX" secondItem="V1J-8m-geJ" secondAttribute="centerX" constant="-0.5" id="tte-yi-KR9"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -74,6 +75,8 @@
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="hKi-LH-hIG"/>
+                                <exclude reference="5Cn-aG-Nyo"/>
+                                <exclude reference="tte-yi-KR9"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -82,6 +85,9 @@
                             </mask>
                             <mask key="constraints">
                                 <include reference="hKi-LH-hIG"/>
+                                <include reference="5Cn-aG-Nyo"/>
+                                <exclude reference="5En-cW-dHO"/>
+                                <include reference="tte-yi-KR9"/>
                             </mask>
                         </variation>
                     </view>
@@ -540,6 +546,6 @@
         <image name="trueswitch" width="77" height="27"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ppo-40-fM4"/>
+        <segue reference="1aY-yp-qOx"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -58,7 +58,7 @@ class Game {
             
             /* Some additional last advice if the game is over */
             if ((round - numCorrect) == 0) {
-                message += " Wowza, perfect score! 100%"
+                message += "  You answered 5 out of 5 correctly. Wowza, perfect score! 100%"
             } else if ((round - numCorrect) <= 2) {
                 message += " Almost there. Keep studying!"
             } else {

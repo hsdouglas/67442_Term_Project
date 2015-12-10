@@ -79,7 +79,7 @@ class GameViewController: UIViewController {
         
         /* if the game is over, take the user back to the homepage */
         if gameOver == true {
-            let action = UIAlertAction(title: "all done!", style: .Default, handler: {
+            let action = UIAlertAction(title: "All Done!", style: .Default, handler: {
                 action in self.performSegueWithIdentifier("returnHome", sender: self)
             })
             alert.addAction(action)
@@ -105,6 +105,7 @@ class GameViewController: UIViewController {
     /* send the game object data to calculate user feedback */
     func startNewRound() {
         game.calculateNumCorrect()
+        drawNewFact()
         game.startNewRound()
     }
     

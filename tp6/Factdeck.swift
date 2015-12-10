@@ -28,7 +28,7 @@ class Factdeck {
             "talking about emotions doesn't help calm them" : false,
             "boys' voices deepen during puberty" : true,
             "boys and girls sweat less during puberty" : false,
-            "only boys grow pubic hair" : false,
+            "only girls grow pubic hair" : false,
             "boys and girls get acne only after puberty ends" : false,
             "boys' and girls' private parts grow during puberty" : true,
             "everyone's body parts all look the same" : false,
