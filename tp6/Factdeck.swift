@@ -16,9 +16,28 @@ class Factdeck {
         let factData = [
             "puberty happens to everybody" : true,
             "during puberty, only boys grow hair in new places" : false,
-            "girls hips widen during puberty" : true,
+            "girls' hips widen during puberty" : true,
             "peer pressure is heightened during puberty" : true,
-            "the physical changes in puberty are unnatural" : false
+            "the physical changes that happen during puberty are completely natural" : true,
+            "puberty happens overnight" : false,
+            "puberty involves only physical changes" : false,
+            "mood swings can lead to stress" : true,
+            "both girls and boys have more intense emotions during puberty" : true,
+            "growing pains from growth spurts are real" : true,
+            "talking about emotions doesn't help" : false,
+            "boys' voices deepen during puberty" : true,
+            "boys and girls sweat less during puberty" : false,
+            "only boys grow pubic hair" : false,
+            "boys and girls get acne only after puberty ends" : false,
+            "boys' and girls' private parts grow during puberty" : true,
+            "everyone's body parts all look the same" : false,
+            "growth after puberty is abnormal" : false,
+            "as soon as girls begin menstruating, they can become pregnant" : true,
+            "just like girls, boys have reproductive cells from birth" : false,
+            "the changes that happen during puberty are caused by hormones" : true,
+            "new bodily fluids are a normal part of puberty" : true,
+            
+            
         ]
         
         // Now create a simple way to loop through the dictionary and create a Flashcard object

@@ -14,15 +14,17 @@ class GameViewController: UIViewController {
     var fact: Factoid?
 
     @IBOutlet weak var tfSwitch: UISwitch!
-    @IBOutlet weak var switchState: UILabel!
+    //@IBOutlet weak var switchState: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
-    @IBOutlet weak var answerLabel: UILabel!
     @IBOutlet weak var round: UILabel!
     @IBOutlet weak var score: UILabel!
     
     var game = Game()
     
     override func viewDidLoad() {
+        //tfSwitch.onImage = UIImage(named: "falseswitch")
+        //ftfSwitch.offImage = UIImage(named: "trueswitch")
+        
         game.startNewGame()
         updateLabels()
         super.viewDidLoad()
@@ -44,10 +46,10 @@ class GameViewController: UIViewController {
         var guess: Bool
         if tfSwitch.on {
             guess = false
-            switchState.text = "You are guessing false."
+            //switchState.text = "You are guessing false."
         } else {
             guess = true
-            switchState.text = "You are guessing true."
+            //switchState.text = "You are guessing true."
         }
         game.currentValue = guess
     }
@@ -112,7 +114,6 @@ class GameViewController: UIViewController {
         if let flashcard = factDict.drawRandomFact() {
             self.fact = flashcard
             questionLabel.text = flashcard.factStatement
-            answerLabel.text = flashcard.factReality.description
             game.targetValue = flashcard.factReality
         }
     }
